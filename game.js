@@ -6,13 +6,13 @@ window.onload = function(){
       let randomNum = Math.random()*10
       if(time<minTime){
         if(randomNum<luckyNum){
-          console.log(randomNum,luckyNum)
+          alert('恭喜您中奖了')
           time = 0
         }else{
-          console.log(randomNum,luckyNum)
+          alert('您未中奖，请再接再厉')
         }
       }else{
-        console.log(randomNum,luckyNum)
+        alert('恭喜您中奖了')
         time = 0
       }
       yield time++
